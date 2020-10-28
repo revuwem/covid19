@@ -98,9 +98,14 @@ ul{
 .button{
     width: auto;
     height: auto;
-    
+    display: inline-block;
 
     color: #fff;
+    font-family: var(--header-font-family);
+    font-weight: 700;
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: none;
     
     background-color: var(--primary-color);
 
@@ -114,10 +119,36 @@ ul{
 }
 
 .button-large{
+    margin: 50px 0;
     padding: 26px 80px;
     font-size: 22px;
     line-height: 26px;
     border-radius: 157px;
+}
+
+.button-outlined{
+    height: 55px;
+    padding: 16px 45px 17px;
+    
+    font-family: var(--text-font-family);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    border-radius: 46px;
+}
+
+.button-outlined:hover{
+    color: #ffffff;
+}
+
+.nav-list-link.button-outlined{
+    color: var(--primary-color);
+}
+
+.nav-list-link.button-outlined:hover{
+    color: #ffffff;
 }
 
 /* NAV */
@@ -435,12 +466,18 @@ section{
 }
 
 .form .button{
+    margin: 0;
     position: absolute;
     top: 15px;
     right: 15px;
 }
 
 
+/* FOOTER */
 
+.copyright{
+    padding: 20px 0;
+    text-align: center;
+}
 
 
