@@ -176,3 +176,25 @@ ul{
     width: 50%;
     height: auto;
 }
+
+.overview{
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    padding: 100px 0;
+
+    background-image: url('/images/bg/coronavirus-bg.svg');
+    background-size: 100%;
+    background-position: center left;
+    background-repeat: no-repeat;
+
+    display: flex;    
+    align-items: center;
+}
+
+.overview .content{
+    width: 50%;
+    height: auto;
+    margin: 0;
+    margin-left: auto;
+}
