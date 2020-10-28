@@ -163,7 +163,8 @@ ul{
 /* SECTION */
 section{
     width: 100%;
-    height: auto;    
+    height: auto;   
+    padding: 74px 0; 
 }
 
 /* HERO SECTION */
@@ -265,6 +266,29 @@ section{
 }
 
 .contagion-list-item figure>img{
+    width: 100%;
+    height: auto;
+}
+
+
+/* SYMPTOMPS SECTION */
+.symptomps{
+    min-height: 100vh;
+}
+
+.symptomps .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.symptomps p{
+    max-width: 760px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.symptomps figure>img{
     width: 100%;
     height: auto;
 }
