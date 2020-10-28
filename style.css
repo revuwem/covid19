@@ -56,7 +56,7 @@ h1{
 
 h2{    
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 
     font-size: 2.5rem;
     line-height: 1.2;
@@ -94,6 +94,8 @@ ul{
     width: 100%;
     height: auto;    
 }
+
+/* NAV */
 
 .nav{
     width: 100%;
@@ -157,9 +159,16 @@ ul{
     transition: ease 0.1s;
 }
 
-.hero{
+
+/* SECTION */
+section{
     width: 100%;
-    height: auto;
+    height: auto;    
+}
+
+/* HERO SECTION */
+
+.hero{    
     min-height: calc(100vh - 125px);
 
     background-image: url('/images/bg/hero-bg.svg');
@@ -177,10 +186,10 @@ ul{
     height: auto;
 }
 
-.overview{
-    width: 100%;
-    height: auto;
-    min-height: 100vh;
+/* OVERVIEW SECTION */
+
+.overview{   
+    min-height: 100vh; 
     padding: 100px 0;
 
     background-image: url('/images/bg/coronavirus-bg.svg');
@@ -197,4 +206,65 @@ ul{
     height: auto;
     margin: 0;
     margin-left: auto;
+}
+
+/* CONTAGION SECTION */
+
+.contagion {
+    background-image: url('/images/decoration/virus-medium-pink.svg');
+    background-size: 14%;
+    background-position: 5% 90%;
+    background-repeat: no-repeat;
+}
+
+.contagion .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contagion p{
+    max-width: 570px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.contagion-list{    
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contagion-list-item{
+    flex: 1;
+    height: auto;
+    max-height: 575px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    padding: 65px 52px 80px;
+
+    text-align: center;
+
+    background-color: #ffffff;
+    box-shadow: 0px 5px 80px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+.contagion-list-item:hover{
+    border-bottom: 6px solid var(--primary-color);
+}
+
+.contagion-list-item figure{
+    width: 100%;
+    max-width: 270px;
+    height: auto;
+    max-height: 250px;
+}
+
+.contagion-list-item figure>img{
+    width: 100%;
+    height: auto;
 }
