@@ -156,3 +156,23 @@ ul{
     transform: scale(1.2);
     transition: ease 0.1s;
 }
+
+.hero{
+    width: 100%;
+    height: auto;
+    min-height: calc(100vh - 125px);
+
+    background-image: url('/images/bg/hero-bg.svg');
+    background-size: 50%;
+    background-position: center right;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+
+}
+
+.hero .content{
+    width: 50%;
+    height: auto;
+}
