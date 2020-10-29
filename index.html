@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e2831e25cd.js" crossorigin="anonymous"></script>
     <title>Covid-19</title>
 </head>
 
@@ -17,16 +18,22 @@
                         <img src="/images/logo.svg" alt="Covid-19">
                     </a>
                 </div>
-                <ul class="nav-list">
-                    <li class="nav-list-item"><a href="#overview" class="nav-list-link">Overview</a></li>
-                    <li class="nav-list-item"><a href="#contagion" class="nav-list-link">Contagion</a></li>
-                    <li class="nav-list-item"><a href="#symptomps" class="nav-list-link">Symptoms</a></li>
-                    <li class="nav-list-item"><a href="#prevention" class="nav-list-link">Prevention</a></li>
-                    <li class="nav-list-item"><a href="#feedback" class="nav-list-link button button-outlined">Contact</a></li>
-                </ul>
-
+                <button class="nav-toggle" data-toggle="header-nav">   
+                    <i class="fa fa-bars fa-2x" data-toggle="header-nav"></i>                
+                </button>
+                <div class="navbar" id="header-nav">
+                    <ul class="nav-list">
+                        <li class="nav-list-item"><a href="#overview" class="nav-list-link">Overview</a></li>
+                        <li class="nav-list-item"><a href="#contagion" class="nav-list-link">Contagion</a></li>
+                        <li class="nav-list-item"><a href="#symptomps" class="nav-list-link">Symptoms</a></li>
+                        <li class="nav-list-item"><a href="#prevention" class="nav-list-link">Prevention</a></li>
+                        <li class="nav-list-item"><a href="#feedback" class="nav-list-link button button-outlined">Contact</a></li>
+                    </ul>
+                </div>
             </nav>
         </div>
+    </header>
+    <main>
         <section class="hero">
             <div class="container">
                 <div class="content">
@@ -37,8 +44,6 @@
                 </div>
             </div>
         </section>
-    </header>
-    <main>
         <section class="overview" id="overview">
             <div class="container">
                 <div class="content">
@@ -169,6 +174,7 @@
                         <img src="/images/logo.svg" alt="Covid-19">
                     </a>
                 </div>
+
                 <ul class="nav-list">
                     <li class="nav-list-item"><a href="#overview" class="nav-list-link">Overview</a></li>
                     <li class="nav-list-item"><a href="#contagion" class="nav-list-link">Contagion</a></li>
@@ -196,6 +202,24 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        const toggleNavButton = document.querySelector('.nav-toggle');
+
+        toggleNavButton.addEventListener('click', toggleNav);
+
+        function toggleNav(e) {
+            console.log(e.target);
+            const target = e.target.dataset.toggle;
+            const nav = document.getElementById(target);
+
+            if (!nav.classList.contains('active')) {
+                nav.classList.add('active');
+            } else {
+                nav.classList.remove('active');
+            }
+        }
+    </script>
 </body>
 
 </html>
