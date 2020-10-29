@@ -182,6 +182,10 @@ ul{
     align-items: center;
 }
 
+.nav-list-item:first-child{
+    padding-left: 0;
+}
+
 
 .nav-list-link{
     color: var(--secondary-color);
