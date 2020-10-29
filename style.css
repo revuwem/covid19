@@ -72,6 +72,13 @@ h3{
     line-height: 1.5;
 }
 
+h1 span, 
+h2 span{
+    display: block;
+    color: var(--primary-color);
+    font-size: 0.5em;    
+}
+
 ul{
     list-style: none;
 }
@@ -337,6 +344,10 @@ section{
     align-items: center;
 }
 
+.contagion h2{
+    text-align: center;
+}
+
 .contagion p{
     max-width: 570px;
     margin-bottom: 100px;
@@ -396,6 +407,10 @@ section{
     align-items: center;
 }
 
+.symptomps h2{
+    text-align: center;
+}
+
 .symptomps p{
     max-width: 760px;
     margin-bottom: 50px;
@@ -413,6 +428,10 @@ section{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.prevention h2{
+    text-align: center;
 }
 
 .prevention p{
