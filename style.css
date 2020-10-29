@@ -350,29 +350,29 @@ section{
 }
 
 
-/* PROTECTION SECTION */
-.protection .container{
+/* prevention SECTION */
+.prevention .container{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.protection p{
+.prevention p{
     max-width: 650px;
     margin-bottom: 100px;
     text-align: center;
 }
 
-.protection-list{
+.prevention-list{
     width: 100%; 
     list-style: none;
-    counter-reset: protection-list-counter;
+    counter-reset: prevention-list-counter;
     display: flex;
     flex-direction: column;
 }
 
-.protection-list-item{   
-    counter-increment: protection-list-counter;   
+.prevention-list-item{   
+    counter-increment: prevention-list-counter;   
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -380,38 +380,38 @@ section{
     flex-wrap: wrap;
 }
 
-.protection-list-item:nth-child(2n){
+.prevention-list-item:nth-child(2n){
     flex-direction: row;
 }
 
-.protection-list-item figure{
+.prevention-list-item figure{
     flex: 1 0 340px;
     max-width: 555px;
     max-height: 575px;
     padding: 20px;
 }
 
-.protection-list-item figure>img{
+.prevention-list-item figure>img{
     width: 100%;
     height: 100%;
 }
 
-.protection-list-item div{
+.prevention-list-item div{
     flex: 1 0 340px;
     max-width: 650px; 
     padding: 90px;   
 }
 
-.protection-list-item div>*{
+.prevention-list-item div>*{
     text-align: left;
 }
 
-.protection-list-item h3{
+.prevention-list-item h3{
     position: relative;
 }
 
-.protection-list-item h3::before{
-    content: '0' counter(protection-list-counter);
+.prevention-list-item h3::before{
+    content: '0' counter(prevention-list-counter);
     position: absolute;
     top: 0;
     left: -90px;
